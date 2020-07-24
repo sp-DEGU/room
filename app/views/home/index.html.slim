@@ -1,0 +1,52 @@
+.home
+  .home_inner
+    .home_Event
+      h2.home_EventTitle
+        | 開催中
+      .home_contener
+        .home_item
+          .home_itemTitle
+            | あああああ
+          p.home_itemdetail
+            | あああああ
+          .home_itemContent
+            .home_itemContentTitle
+              | 時間
+            .home_itemContentdetail
+              | 2002/02/02 21:00~23:00
+          .home_itemContent
+            .home_itemContentTitle
+              | 主催者
+            .home_itemContentdetail
+              | sp_degu
+          .home_itemContent
+            = link_to 'Zoomに入る', '/', class: 'home_itemButton'
+    .home_Event
+        h2.home_EventTitle
+          | 開催予定
+        .home_contener
+          .home_item
+            .home_itemTitle
+              | あああああ
+            p.home_itemdetail
+              | あああああ
+            .home_itemContent
+              .home_itemContentTitle
+                | 時間
+              .home_itemContentdetail
+                | 2002/02/02 21:00~23:00
+            .home_itemContent
+              .home_itemContentTitle
+                | 主催者
+              .home_itemContentdetail
+                | sp_degu
+            .home_itemContent
+              = link_to 'Zoomに入る', '/', class: 'home_itemButton'
+    .home_Event
+        h2.home_EventTitle
+          | 開催予定
+        .home_contener
+          p.home_item--nil
+            | 開催予定のZoomはありません。
+            = link_to 'こちらから', '/', class: 'home_itemLink--nil'
+            | 予定を追加してください。
