@@ -1,0 +1,38 @@
+.edit
+  .edit_inner
+    .edit_content
+      h2.edit_contentTitle
+        | 予定を作成する
+      = form_tag("/home/create") do
+        .edit_formContner
+          label for="Taitle"
+            | タイトル
+          input type="text"  name="title" id="Title" 
+
+        .edit_formContner
+          label for="Detail"
+            | 詳細
+          textarea name="detail" rows="3"
+
+        .edit_formContner
+          label for="Time-start"
+            | 開始時間
+          input type="datetime-local"  name="timeStart" id="Time-start"
+
+        .edit_formContner
+          label for="Time-end"
+            | 開始時間
+          input type="datetime-local"  name="timeEnd" id="Time-end"
+        
+        .edit_formContner
+          label for="User"
+            | 主催者
+          input type="text"  name="user" id="User"
+
+        .edit_formContner
+          label for="Url"
+            | ZoomURL
+          input type="text"  name="url" id="Url"
+
+        .edit_formContner
+          input type="submit" value="予定を追加"
